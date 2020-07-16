@@ -2,27 +2,39 @@
   "products": [
     {
       "id": "123",
-      "title": "Nome do produto 01",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 50
+      "title": "Mouse Logitech",
+      "image_url": "https://images.unsplash.com/photo-1563297007-0686b7003af7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1091&q=80",
+      "price": 350
     },
     {
       "id": "1234",
-      "title": "Nome do produto 02",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 60
+      "title": "Drone Mtz-AKB",
+      "image_url": "https://images.unsplash.com/photo-1528158477878-c8036dc3c31a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1037&q=80",
+      "price": 1350
     },
     {
       "id": "12345",
-      "title": "Nome do produto 03",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 70
+      "title": "Nintendo Switch",
+      "image_url": "https://images.unsplash.com/photo-1585857188892-93512a3a0efd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "price": 2000
     },
     {
       "id": "123456",
-      "title": "Nome do produto 04",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 80
+      "title": "HTC Vive",
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/61p3jsMTfWL._AC_SL1500_.jpg",
+      "price": 4500
+    },
+    {
+      "id": "123457",
+      "title": "One Wheel Electric Skate",
+      "image_url": "https://www.rideandglide.co.uk/wp-content/uploads/Onewheel-XR.jpg",
+      "price": 6300
+    },
+    {
+      "id": "12345678",
+      "title": "Wacom Cintiq 13HD",
+      "image_url": "https://www.houter.com.br/wp-content/uploads/2019/08/42220_1542636734_index_gg.jpg",
+      "price": 3200
     }
   ]
 }

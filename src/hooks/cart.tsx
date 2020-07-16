@@ -92,28 +92,41 @@ const CartProvider: React.FC = ({ children }) => {
   );
 
   const decrement = useCallback(
+    // async id => {
+    //   const cartItem = products.find(product => product.id === id);
+    //   if (cartItem) {
+    //     const productsFiltered = products.filter(
+    //       product => product.id !== cartItem.id,
+    //     );
+    //     console.log(productsFiltered);
+    //     if (cartItem.quantity > 1) {
+    //       cartItem.quantity -= 1;
+    //       setProducts([...productsFiltered, cartItem]);
+    //     } else if (productsFiltered) {
+    //       console.log(productsFiltered);
+    //       setProducts([]);
+    //       console.log(products);
+    //     } else {
+    //       setProducts([]);
+    //     }
+    //     await AsyncStorage.setItem(
+    //       '@GoMarkerPlace:CartItems',
+    //       JSON.stringify(products),
+    //     );
+    //   }
     async id => {
-      const cartItem = products.find(product => product.id === id);
-      if (cartItem) {
-        const productsFiltered = products.filter(
-          product => product.id !== cartItem.id,
-        );
-        console.log(productsFiltered);
-        if (cartItem.quantity > 1) {
-          cartItem.quantity -= 1;
-          setProducts([...productsFiltered, cartItem]);
-        } else if (productsFiltered) {
-          console.log(productsFiltered);
-          setProducts([]);
-          console.log(products);
-        } else {
-          setProducts([]);
-        }
-        await AsyncStorage.setItem(
-          '@GoMarkerPlace:CartItems',
-          JSON.stringify(products),
-        );
-      }
+      setProducts(
+        products.map(product =>
+          product.id === id
+            ? { ...product, quantity: product.quantity + 1 }
+            : product,
+        ),
+      );
+      console.log(products);
+      await AsyncStorage.setItem(
+        '@GoMarkerPlace:CartItems',
+        JSON.stringify(products),
+      );
     },
     [products],
   );
